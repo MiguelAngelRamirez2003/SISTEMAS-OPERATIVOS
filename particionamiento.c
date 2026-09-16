@@ -109,7 +109,7 @@ int liberar_particion(Particion particiones[], int n, int id_proceso) {
 	
 	for (i = 0; i < n; i++) {
 		if (particiones[i].estado == OCUPADA && particiones[i].id_proceso == id_proceso){
-			particiones[i].estado == LIBRE;
+			particiones[i].estado = LIBRE;
 			particiones[i].id_proceso = -1;
 			return 1;
 		}
